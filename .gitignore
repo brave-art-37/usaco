@@ -1,0 +1,6 @@
+# ignore all the build folders
+**/build/
+
+# ignore input and output files
+*.in
+*.out
