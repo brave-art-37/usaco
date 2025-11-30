@@ -15,7 +15,7 @@ void solve(){
       tmp+=(data[n-1-i][j]=='.');
       tmp+=(data[i][n-1-j]=='.');
       tmp+=(data[n-1-i][n-1-j]=='.');
-      cout<<i<<' '<<j<<' '<<tmp<<"\n";
+      //cout<<i<<' '<<j<<' '<<tmp<<"\n";
       count+=min(tmp,4-tmp);
     }
   }
@@ -30,16 +30,16 @@ void solve(){
     tmp+=(data[n-1-i][j]=='.');
     tmp+=(data[i][n-1-j]=='.');
     tmp+=(data[n-1-i][n-1-j]=='.');
-    cout<<min(tmp,4-tmp)<<"\n";
+    //cout<<min(tmp,4-tmp)<<"\n";
     count-=min(tmp,4-tmp);
     tmp=0;
     if(data[r][c]=='.') data[r][c]='#';
-    if(data[r][c]=='#') data[r][c]='.';
+    else if(data[r][c]=='#') data[r][c]='.';
     tmp+=(data[i][j]=='.');
     tmp+=(data[n-1-i][j]=='.');
     tmp+=(data[i][n-1-j]=='.');
     tmp+=(data[n-1-i][n-1-j]=='.');
-    cout<<min(tmp,4-tmp)<<"\n";
+    //cout<<min(tmp,4-tmp)<<"\n";
     count+=min(tmp,4-tmp);
     cout<<count<<"\n";
   }
