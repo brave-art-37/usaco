@@ -1,2 +1,2 @@
 # usaco
-CP questions from USACO Guide
+CP practice from USACO Guide
